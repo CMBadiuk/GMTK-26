@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dyt3fiyarui5"]
+
+[ext_resource type="Script" uid="uid://cerrphj7hkyw1" path="res://scripts/ending_screen.gd" id="1_61pod"]
+
+[node name="EndingScreen" type="CanvasLayer" unique_id=1386298770]
+layer = 10
+script = ExtResource("1_61pod")
+
+[node name="Fade" type="Control" parent="." unique_id=1055834020]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Background" type="ColorRect" parent="Fade" unique_id=1336378459]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Center" type="CenterContainer" parent="Fade" unique_id=1637709603]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="Fade/Center" unique_id=1673232190]
+layout_mode = 2
+theme_override_constants/separation = 40
+
+[node name="Title" type="Label" parent="Fade/Center/VBox" unique_id=83662518]
+layout_mode = 2
+theme_override_font_sizes/font_size = 96
+horizontal_alignment = 1
+
+[node name="Line" type="Label" parent="Fade/Center/VBox" unique_id=1112247976]
+custom_minimum_size = Vector2(1100, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+horizontal_alignment = 1
+autowrap_mode = 2
