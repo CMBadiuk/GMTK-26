@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://di4tk17a230al"]
 
+[ext_resource type="Script" uid="uid://c02d8yvfcjkuy" path="res://scripts/countdown_label.gd" id="1_w2twt"]
+
 [node name="Node2D" type="Node2D" unique_id=452429265]
 
 [node name="Control" type="Control" parent="." unique_id=25656853]
@@ -7,3 +9,18 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 3840.0
 offset_bottom = 1080.0
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=490621570]
+
+[node name="CountdownLabel" type="Label" parent="HUD" unique_id=1843258377]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 64
+text = "TIME REMAINING: 5:00"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("1_w2twt")

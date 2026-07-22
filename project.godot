@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Death At The Door"
+run/main_scene="uid://di4tk17a230al"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
