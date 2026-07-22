@@ -40,7 +40,7 @@ func add_coin(amount):
 	
 func spend_coin(amount) -> bool:
 	if coin < amount: return false
-	coin =+ amount
+	coin += amount
 	coin_changed.emit(coin)
 	return true
 	
