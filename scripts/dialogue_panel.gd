@@ -75,7 +75,11 @@ func on_advance() -> void:
 			_block_i += 1
 			_show_current_block()
 		SHOWING_RESULT:
-			_finish_section()
+			_result_i += 1
+			if _result_i >= _result_blocks.size():
+				_finish_section()
+			else:
+				_show_result_block()
 
 func _reveal_responses() -> void:
 	_clear_responses()
@@ -101,7 +105,7 @@ func _on_response_chosen(res: DialogueResponse) -> void:
 		GameState.add_time(res.time_reward)
 		if res.regret_delta != 0.0:
 			GameState.bump_stat("regret", res.regret_delta)
-	_ryat_text.text = res.success_blocks if success else res.fail_blocks
+	_result_blocks = res.success_blocks if success else res.fail_blocks
 	_result_i = 0
 	_state = SHOWING_RESULT
 	_show_result_block()
@@ -115,7 +119,7 @@ func _show_result_block() -> void:
 	_continue.show()
 	
 # Math for ability checks
-func _roll_check(res: DialogueResponse) -> float:
+func _roll_check(res: DialogueResponse) -> bool:
 	if res.stat == "":
 		return true
 	var roll := randi_range(1, 20) + int(GameState.stats[res.stat])
