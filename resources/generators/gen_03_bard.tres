@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Generator" format=3 uid="uid://rdk8aejc74gb"]
+
+[ext_resource type="Script" uid="uid://b7i3k8jwb2ey1" path="res://resources/generator.gd" id="1_nmm6r"]
+
+[resource]
+script = ExtResource("1_nmm6r")
+name = "Hire a Bard"
+flavor = "Music, stories, poetry. Hopefully people stay longer to listen"
+base_cost = 1300
+base_income = 70.0
+metadata/_custom_type_script = "uid://b7i3k8jwb2ey1"

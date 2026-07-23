@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Generator" format=3 uid="uid://iex747o16b7f"]
+
+[ext_resource type="Script" uid="uid://b7i3k8jwb2ey1" path="res://resources/generator.gd" id="1_447ov"]
+
+[resource]
+script = ExtResource("1_447ov")
+name = "Pour Drinks"
+flavor = "The finest liquor in Vinet City"
+base_cost = 10
+base_income = 1.0
+metadata/_custom_type_script = "uid://b7i3k8jwb2ey1"

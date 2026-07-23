@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Generator" format=3 uid="uid://uy7ykmw8u0q0"]
+
+[ext_resource type="Script" uid="uid://b7i3k8jwb2ey1" path="res://resources/generator.gd" id="1_t0dqb"]
+
+[resource]
+script = ExtResource("1_t0dqb")
+name = "Cook Food"
+flavor = "Made to order for each guest. More food, more drinks, more time?"
+base_cost = 120
+base_income = 9.0
+metadata/_custom_type_script = "uid://b7i3k8jwb2ey1"

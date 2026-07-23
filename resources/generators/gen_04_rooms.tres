@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Generator" format=3 uid="uid://bby6l5w30ingh"]
+
+[ext_resource type="Script" uid="uid://b7i3k8jwb2ey1" path="res://resources/generator.gd" id="1_s6qad"]
+
+[resource]
+script = ExtResource("1_s6qad")
+name = "Rent Rooms"
+flavor = "Warm beds mean a good night's rest. If they don't leave, I don't have to close!"
+base_cost = 15000
+base_income = 550.0
+metadata/_custom_type_script = "uid://b7i3k8jwb2ey1"
