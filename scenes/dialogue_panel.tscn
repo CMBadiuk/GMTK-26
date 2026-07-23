@@ -1,13 +1,59 @@
 [gd_scene format=3 uid="uid://bow2saq4gooxg"]
 
+[ext_resource type="Script" uid="uid://7f4x53ax01xy" path="res://scripts/dialogue_panel.gd" id="1_u2elu"]
+
 [node name="DialoguePanel" type="Control" unique_id=60617725]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
+script = ExtResource("1_u2elu")
 
 [node name="Background" type="ColorRect" parent="." unique_id=869124848]
 layout_mode = 1
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0.0027654003, 0.73118144, 0.9090321, 1)
+
+[node name="ToTavern" type="Button" parent="." unique_id=524459748]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -358.0
+offset_top = -29.0
+offset_right = -128.0
+offset_bottom = 29.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+text = "To Tavern >>"
+
+[node name="VBox" type="VBoxContainer" parent="." unique_id=2076977590]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -500.0
+offset_top = -20.0
+offset_right = 500.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RyatText" type="Label" parent="VBox" unique_id=73498832]
+custom_minimum_size = Vector2(1000, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+autowrap_mode = 2
+
+[node name="ResponseVBox" type="VBoxContainer" parent="VBox" unique_id=728849270]
+layout_mode = 2
+
+[node name="Continue" type="Button" parent="VBox" unique_id=1271585651]
+layout_mode = 2
+text = "Continue >"

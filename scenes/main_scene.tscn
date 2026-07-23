@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://b8fajc2hjpb4a" path="res://scripts/main_scene.gd" id="1_pw63i"]
 [ext_resource type="Script" uid="uid://c02d8yvfcjkuy" path="res://scripts/countdown_label.gd" id="1_w2twt"]
+[ext_resource type="PackedScene" uid="uid://bow2saq4gooxg" path="res://scenes/dialogue_panel.tscn" id="2_pu3yx"]
+[ext_resource type="PackedScene" uid="uid://bni13xy0yi41k" path="res://scenes/tavern_panel.tscn" id="3_gubc5"]
 
 [node name="MainScene" type="Node2D" unique_id=452429265]
 script = ExtResource("1_pw63i")
@@ -9,6 +11,15 @@ script = ExtResource("1_pw63i")
 [node name="World" type="Control" parent="." unique_id=25656853]
 layout_mode = 3
 anchors_preset = 0
+offset_right = 3840.0
+offset_bottom = 1080.0
+
+[node name="DialoguePanel" parent="World" unique_id=60617725 instance=ExtResource("2_pu3yx")]
+layout_mode = 0
+
+[node name="TavernPanel" parent="World" unique_id=1814396513 instance=ExtResource("3_gubc5")]
+layout_mode = 0
+offset_left = 1920.0
 offset_right = 3840.0
 offset_bottom = 1080.0
 
@@ -28,8 +39,17 @@ vertical_alignment = 1
 script = ExtResource("1_w2twt")
 
 [node name="NudgeLabel" type="Label" parent="HUD" unique_id=134034341]
-offset_right = 40.0
-offset_bottom = 23.0
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -393.5
+offset_top = 96.0
+offset_right = 393.5
+offset_bottom = 163.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 36
+text = "<< Your guest clears their throat..."
+horizontal_alignment = 1
 
 [node name="SectionTimer" type="Timer" parent="." unique_id=214115849]
 one_shot = true
