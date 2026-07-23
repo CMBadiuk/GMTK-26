@@ -29,8 +29,19 @@ success_blocks = Array[String](["Ryat success action/phrase 1", "Ryat success ac
 fail_blocks = Array[String](["Ryat failure action/phrase 1", "Ryat failure action/phrase 2"])
 metadata/_custom_type_script = "uid://b2hfg3suqs6q8"
 
+[sub_resource type="Resource" id="Resource_u3xqu"]
+script = ExtResource("1_u3xqu")
+text = "[Heart] Something heartfelt"
+stat = "heart"
+difficulty = 18
+time_reward = 350.0
+regret_delta = -4.0
+success_blocks = Array[String](["Ryat success action/phrase 1", "Ryat success action/phrase 2"])
+fail_blocks = Array[String](["Ryat failure action/phrase 1", "Ryat failure action/phrase 2"])
+metadata/_custom_type_script = "uid://b2hfg3suqs6q8"
+
 [resource]
 script = ExtResource("1_udf2x")
 ryat_blocks = Array[String](["\"Good evening. It has taken me a great deal of time to reach you, friend.\"", "\"You may not think you know me, but everyone does. You will come to understand that soon.\"", "\"For now, I would like a drink. It has been... some time, since I have indulged in a drink.\""])
-responses = Array[ExtResource("1_u3xqu")]([SubResource("Resource_rfgki"), SubResource("Resource_5ihvl"), SubResource("Resource_ytdbo"), null])
+responses = Array[ExtResource("1_u3xqu")]([SubResource("Resource_rfgki"), SubResource("Resource_5ihvl"), SubResource("Resource_ytdbo"), SubResource("Resource_u3xqu")])
 metadata/_custom_type_script = "uid://df04r43nwrjxo"

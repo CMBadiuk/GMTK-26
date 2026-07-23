@@ -53,3 +53,8 @@ autowrap_mode = 2
 
 [node name="ResponseVBox" type="VBoxContainer" parent="VBox" unique_id=728849270]
 layout_mode = 2
+
+[node name="Continue" type="Button" parent="VBox" unique_id=600564673]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Continue"

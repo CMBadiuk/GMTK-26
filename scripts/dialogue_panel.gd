@@ -101,10 +101,10 @@ func _on_response_chosen(res: DialogueResponse) -> void:
 		GameState.add_time(res.time_reward)
 		if res.regret_delta != 0.0:
 			GameState.bump_stat("regret", res.regret_delta)
-	_ryat_text.text = res["result"]
-	_continue.text = ">"
-	_continue.show()
+	_ryat_text.text = res.success_blocks if success else res.fail_blocks
+	_result_i = 0
 	_state = SHOWING_RESULT
+	_show_result_block()
 	
 func _show_result_block() -> void:
 	if _result_blocks.is_empty():
