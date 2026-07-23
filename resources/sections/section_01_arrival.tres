@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="DialogueSection" format=3 uid="uid://doirdk6c31h73"]
+
+[ext_resource type="Script" uid="uid://b2hfg3suqs6q8" path="res://resources/dialogue_response.gd" id="1_u3xqu"]
+[ext_resource type="Script" uid="uid://df04r43nwrjxo" path="res://resources/dialogue_section.gd" id="1_udf2x"]
+
+[sub_resource type="Resource" id="Resource_rfgki"]
+script = ExtResource("1_u3xqu")
+text = "\"First one's on the house. Always is.\""
+success_blocks = Array[String](["The individual cracks a gentle smile.", "\"A generous gesture. A delay of the inevitable will be accepted today.\""])
+metadata/_custom_type_script = "uid://b2hfg3suqs6q8"
+
+[sub_resource type="Resource" id="Resource_5ihvl"]
+script = ExtResource("1_u3xqu")
+text = "[Charm] \"If a drink is all you want, stranger, I have plenty. But don't you think a story would be nice?\""
+stat = "charm"
+difficulty = 8
+time_reward = 60.0
+success_blocks = Array[String](["\"I suppose a story wouldn't hurt. Go ahead.\""])
+fail_blocks = Array[String](["A frown crosses the person's face - not one of annoyance, but of resignation.", "\"Stories may be nice, but it would take too much time now.\""])
+metadata/_custom_type_script = "uid://b2hfg3suqs6q8"
+
+[sub_resource type="Resource" id="Resource_ytdbo"]
+script = ExtResource("1_u3xqu")
+text = "[Wit] Something smart and witty"
+stat = "wit"
+difficulty = 12
+time_reward = 150.0
+success_blocks = Array[String](["Ryat success action/phrase 1", "Ryat success action/phrase 2"])
+fail_blocks = Array[String](["Ryat failure action/phrase 1", "Ryat failure action/phrase 2"])
+metadata/_custom_type_script = "uid://b2hfg3suqs6q8"
+
+[resource]
+script = ExtResource("1_udf2x")
+ryat_blocks = Array[String](["\"Good evening. It has taken me a great deal of time to reach you, friend.\"", "\"You may not think you know me, but everyone does. You will come to understand that soon.\"", "\"For now, I would like a drink. It has been... some time, since I have indulged in a drink.\""])
+responses = Array[ExtResource("1_u3xqu")]([SubResource("Resource_rfgki"), SubResource("Resource_5ihvl"), SubResource("Resource_ytdbo"), null])
+metadata/_custom_type_script = "uid://df04r43nwrjxo"

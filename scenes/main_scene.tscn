@@ -3,10 +3,13 @@
 [ext_resource type="Script" uid="uid://b8fajc2hjpb4a" path="res://scripts/main_scene.gd" id="1_pw63i"]
 [ext_resource type="Script" uid="uid://c02d8yvfcjkuy" path="res://scripts/countdown_label.gd" id="1_w2twt"]
 [ext_resource type="PackedScene" uid="uid://bow2saq4gooxg" path="res://scenes/dialogue_panel.tscn" id="2_pu3yx"]
+[ext_resource type="Script" uid="uid://df04r43nwrjxo" path="res://resources/dialogue_section.gd" id="2_rt2n2"]
+[ext_resource type="Resource" uid="uid://doirdk6c31h73" path="res://resources/sections/section_01_arrival.tres" id="3_c16ls"]
 [ext_resource type="PackedScene" uid="uid://bni13xy0yi41k" path="res://scenes/tavern_panel.tscn" id="3_gubc5"]
 
 [node name="MainScene" type="Node2D" unique_id=452429265]
 script = ExtResource("1_pw63i")
+sections = Array[ExtResource("2_rt2n2")]([ExtResource("3_c16ls")])
 
 [node name="World" type="Control" parent="." unique_id=25656853]
 layout_mode = 3

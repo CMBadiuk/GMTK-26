@@ -19,6 +19,9 @@ var _facing := "dialogue"
 var _turn_tween: Tween
 var _ending_shown := false
 
+@export var sections: Array[DialogueSection] = []
+var _section_i := 0
+
 func _ready() -> void:
 	GameState.game_over.connect(_on_game_over)
 	_dialogue.section_finished.connect(_on_section_finished)
@@ -46,12 +49,16 @@ func face(side: String, instant := false) -> void:
 		_nudge.hide()
 		
 func _fire_section() -> void:
-	_dialogue.start_section()
+	if _section_i >= sections.size():
+		return
+	_dialogue.start_section(sections[_section_i])
+	_section_i += 1
 	if _facing != "dialogue":
 		_nudge.show()
 	
 func _on_section_finished() -> void:
-	_section_timer.start(SECTION_CADENCE)
+	if _section_i < sections.size():
+		_section_timer.start(SECTION_CADENCE)
 	
 func _on_game_over(reason: String) -> void:
 	if _ending_shown:
