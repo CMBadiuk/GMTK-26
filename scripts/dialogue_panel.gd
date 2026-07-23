@@ -62,7 +62,7 @@ func _show_current_block() -> void:
 		_hide_responses()
 		_continue.text = "Continue >"
 		_continue.show()
-		_state - SHOWING_BLOCKS
+		_state = SHOWING_BLOCKS
 		
 func on_advance() -> void:
 	match _state:
