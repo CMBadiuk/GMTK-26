@@ -3,10 +3,10 @@
 [ext_resource type="Script" uid="uid://b8fajc2hjpb4a" path="res://scripts/main_scene.gd" id="1_pw63i"]
 [ext_resource type="Script" uid="uid://c02d8yvfcjkuy" path="res://scripts/countdown_label.gd" id="1_w2twt"]
 
-[node name="Node2D" type="Node2D" unique_id=452429265]
+[node name="MainScene" type="Node2D" unique_id=452429265]
 script = ExtResource("1_pw63i")
 
-[node name="Control" type="Control" parent="." unique_id=25656853]
+[node name="World" type="Control" parent="." unique_id=25656853]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 3840.0
@@ -26,3 +26,10 @@ text = "TIME REMAINING: 5:00"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("1_w2twt")
+
+[node name="NudgeLabel" type="Label" parent="HUD" unique_id=134034341]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="SectionTimer" type="Timer" parent="." unique_id=214115849]
+one_shot = true

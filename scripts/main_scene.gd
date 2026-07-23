@@ -28,6 +28,8 @@ func _on_game_over(reason: String) -> void:
 #	1 : regret to LOW		(Sets regret to 5, earns you peace)
 #	2 : regret to HIGH		(Sets regret to 20, die without peace)
 func _unhandled_input(event: InputEvent) -> void:
+	if not OS.has_feature("editor"):
+		return
 	if event is InputEventKey and event.pressed and not event.echo:
 		match event.keycode:
 			KEY_T:

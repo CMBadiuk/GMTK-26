@@ -1,4 +1,4 @@
-## Fuul-screen ending card (Some Phase 1 placeholder stuff)
+## Full-screen ending card (Some Phase 1 placeholder stuff)
 ## The ending text is chosen based on the reason for the ending, and a regret 
 ## bucket, resulting in four total endings (two reasons x two buckets)
 ## Writing is placeholder for now, real writing is in Phase 6

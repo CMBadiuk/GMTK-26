@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://bni13xy0yi41k"]
+
+[node name="TavernPanel" type="Control" unique_id=1814396513]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="ColorRect" parent="." unique_id=1011781063]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.33035243, 0.16122806, 0.013147468, 1)
+
+[node name="Title" type="Label" parent="." unique_id=239694105]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 128.0
+offset_top = -178.0
+offset_right = 321.0
+offset_bottom = -128.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 36
+text = "The Tavern (Stub, for Phase 4)"
+
+[node name="ToDialogue" type="Button" parent="." unique_id=2004184243]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 128.0
+offset_top = -29.0
+offset_right = 460.0
+offset_bottom = 29.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 36
+text = "<< To Your Guest..."

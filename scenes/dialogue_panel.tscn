@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bow2saq4gooxg"]
+
+[node name="DialoguePanel" type="Control" unique_id=60617725]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="Background" type="ColorRect" parent="." unique_id=869124848]
+layout_mode = 1
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.0027654003, 0.73118144, 0.9090321, 1)
