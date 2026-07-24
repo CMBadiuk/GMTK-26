@@ -17,3 +17,6 @@ func buy_cost() -> int:
 	
 func income_per_sec() -> float:
 	return base_income * owned * level
+
+func upgrade_cost() -> int:
+	return int(base_cost * 5 * pow(1.5, level -1))

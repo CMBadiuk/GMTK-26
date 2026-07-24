@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatUpgrade" format=3 uid="uid://dvjnqf71fdu41"]
+
+[ext_resource type="Script" uid="uid://c8c2axoiugd1m" path="res://resources/stat_upgrade.gd" id="1_gv2o2"]
+
+[resource]
+script = ExtResource("1_gv2o2")
+stat = "wit"
+base_cost = 35
+metadata/_custom_type_script = "uid://c8c2axoiugd1m"

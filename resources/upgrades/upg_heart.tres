@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="StatUpgrade" format=3 uid="uid://d26vogs56mn18"]
+
+[ext_resource type="Script" uid="uid://c8c2axoiugd1m" path="res://resources/stat_upgrade.gd" id="1_gh4nw"]
+
+[resource]
+script = ExtResource("1_gh4nw")
+stat = "heart"
+base_cost = 50
+metadata/_custom_type_script = "uid://c8c2axoiugd1m"

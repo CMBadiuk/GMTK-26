@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="StatUpgrade" format=3 uid="uid://b2g1p5uuplf8s"]
+
+[ext_resource type="Script" uid="uid://c8c2axoiugd1m" path="res://resources/stat_upgrade.gd" id="1_u6hxq"]
+
+[resource]
+script = ExtResource("1_u6hxq")
+stat = "charm"
+metadata/_custom_type_script = "uid://c8c2axoiugd1m"

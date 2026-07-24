@@ -12,7 +12,7 @@ var time_remaining := 300.0 # Time in seconds before Death takes you
 var is_running := true
 var win_threshold := 3000.0 # Time in seconds required to get Death off your back. Needs to be tuned
 
-var coin := 20
+var coin := 0
 var stats := { "charm": 1, "wit": 1, "heart": 1, "regret": 20}
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

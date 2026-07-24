@@ -6,6 +6,10 @@
 [ext_resource type="Resource" uid="uid://uy7ykmw8u0q0" path="res://resources/generators/gen_02_food.tres" id="4_m700p"]
 [ext_resource type="Resource" uid="uid://rdk8aejc74gb" path="res://resources/generators/gen_03_bard.tres" id="5_ei40h"]
 [ext_resource type="Resource" uid="uid://bby6l5w30ingh" path="res://resources/generators/gen_04_rooms.tres" id="6_ylvqe"]
+[ext_resource type="Script" uid="uid://c8c2axoiugd1m" path="res://resources/stat_upgrade.gd" id="7_ylvqe"]
+[ext_resource type="Resource" uid="uid://b2g1p5uuplf8s" path="res://resources/upgrades/upg_charm.tres" id="8_g04vg"]
+[ext_resource type="Resource" uid="uid://d26vogs56mn18" path="res://resources/upgrades/upg_heart.tres" id="9_tpjyc"]
+[ext_resource type="Resource" uid="uid://dvjnqf71fdu41" path="res://resources/upgrades/upg_wit.tres" id="10_fd7b6"]
 
 [node name="TavernPanel" type="Control" unique_id=1814396513]
 custom_minimum_size = Vector2(1920, 1080)
@@ -15,6 +19,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_rd64r")
 generators = Array[ExtResource("2_1nfl1")]([ExtResource("3_dnayn"), ExtResource("4_m700p"), ExtResource("5_ei40h"), ExtResource("6_ylvqe")])
+stat_upgrades = Array[ExtResource("7_ylvqe")]([ExtResource("8_g04vg"), ExtResource("9_tpjyc"), ExtResource("10_fd7b6")])
 
 [node name="Background" type="ColorRect" parent="." unique_id=1011781063]
 layout_mode = 1
@@ -59,21 +64,6 @@ offset_right = 168.0
 offset_bottom = 151.0
 theme_override_font_sizes/font_size = 36
 
-[node name="GeneratorList" type="VBoxContainer" parent="." unique_id=74240145]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -360.0
-offset_top = -20.0
-offset_right = -320.0
-offset_bottom = 20.0
-grow_horizontal = 0
-grow_vertical = 2
-theme_override_constants/separation = 16
-
 [node name="ServeButton" type="Button" parent="." unique_id=32987410]
 layout_mode = 1
 anchors_preset = 7
@@ -89,3 +79,35 @@ grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 36
 text = "Serve a Customer (+1 Coin)"
+
+[node name="ShopContainer" type="TabContainer" parent="." unique_id=2108043663]
+custom_minimum_size = Vector2(850, 560)
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -1000.0
+offset_top = -280.0
+offset_right = -120.0
+offset_bottom = 280.0
+grow_horizontal = 0
+grow_vertical = 2
+tab_alignment = 2
+current_tab = 0
+tab_0/title = "Jobs"
+tab_1/title = "Upgrades"
+
+[node name="GeneratorList" type="VBoxContainer" parent="ShopContainer" unique_id=279836358]
+layout_mode = 2
+theme_override_constants/separation = 16
+metadata/_tab_index = 0
+metadata/_tab_name = "Jobs"
+
+[node name="UpgradeList" type="VBoxContainer" parent="ShopContainer" unique_id=1598013199]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 16
+metadata/_tab_index = 1
+metadata/_tab_name = "Upgrades"
